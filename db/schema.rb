@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_08_08_052737) do
+ActiveRecord::Schema[7.1].define(version: 2025_08_08_054709) do
   create_table "room_users", charset: "utf8mb3", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "room_id", null: false
@@ -23,6 +23,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_08_052737) do
   create_table "rooms", charset: "utf8mb3", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
